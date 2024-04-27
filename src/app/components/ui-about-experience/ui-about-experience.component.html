@@ -1,0 +1,47 @@
+<div class="ui-experience">
+    <div class="ui-experience-bg">
+        <div class="ui-experience-wraper">
+            <div class="ui-exp">
+                <h3 class="ui-exp__h3">Experiencia laboral</h3>
+                <div class="ui-exp-item" *ngFor="let expe of experiences">
+                    <div class="circle-time"></div>
+                    <div class="ui-exp-item-date">
+                        <i class="fa-sharp fa-solid fa-calendar-days icon-calendar"></i>
+                        <h2 class="ui-exp-item-date__h2">{{ expe.startDate }} - {{ expe.endDate }} </h2>
+                    </div>
+                    <div class="ui-exp-item-company">                 
+                        <div>
+                            <h3 class="ui-exp-item-company__h3">{{ expe.company }}, {{ expe.place }},  </h3>
+                            <h3 class="ui-exp-item-company__h3">{{ expe.role }} – {{ expe.area }}</h3>
+                        </div>
+                       
+                    </div>
+                    <div class="ui-exp-item-description">
+                      
+                    </div>
+                </div>
+               
+            </div>
+            <div class="ui-study">
+                <h3 class="ui-study__h3">Estudios academicos</h3>
+                <div class="ui-study-item" *ngFor="let study of studies">
+                    <div class="circle-time"></div>
+                    <div class="ui-study-item-date">
+                        <i class="fa-sharp fa-solid fa-calendar-days icon-calendar"></i>
+                        <h2 class="ui-study-item-date__h2">{{ study.startDate }} - {{ study.endDate }}</h2>
+                    </div>
+                    <div class="ui-study-item-company">                   
+                        <div>
+                            <h3 class="ui-study-item-company__h3">{{ study.entity }}</h3>
+                            <h3 class="ui-study-item-company__h3">{{ study.course }}</h3>
+                        </div>
+                    </div>
+                    <div class="ui-study-item-description">
+                      
+                    </div>
+                </div>
+               
+            </div>
+       </div>
+    </div>
+</div>

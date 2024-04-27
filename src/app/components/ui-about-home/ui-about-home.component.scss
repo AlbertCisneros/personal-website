@@ -1,0 +1,42 @@
+.ui-home{
+    min-height: 100vh;
+    background-image: url("/assets/images/ui-home-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ui-home-wrapper{
+    width: 80vw;
+}
+
+
+.ui-title-name {
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px;
+}
+
+
+@media (min-width: 1px) and (max-width: 767.9px){
+
+    .ui-title-name {       
+        font-size: 36px;   
+        line-height: 44px; 
+        max-width: 288px;     
+    }
+
+}
+
+@media (min-width: 768px){
+    .ui-title-name {       
+        font-size: 80px;  
+        line-height: 88px;  
+        max-width: 600px;     
+    }
+
+}

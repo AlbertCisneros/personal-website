@@ -1,0 +1,18 @@
+<ui-navbar [mode]="navMode" fixed="true" [shadow]="navShadow" (ctrlBrand)="onBrandClicked()">
+    <ui-menu position="right" slot="content-menu">
+        <ui-menu-option name="Sobre mi"></ui-menu-option>
+        <ui-menu-option name="Habilidades"></ui-menu-option>
+        <ui-menu-option name="Experiencia"></ui-menu-option>
+    </ui-menu>
+</ui-navbar>
+<div class="v-home">
+    <ui-about-home></ui-about-home>
+    <ui-about-me></ui-about-me>
+    <ui-about-job></ui-about-job>
+    <!-- <ui-about-experience></ui-about-experience> -->
+    <!-- <ui-footer></ui-footer> -->
+</div>
+<div class="show-whatsapp">
+    <!-- <ui-whatsapp></ui-whatsapp> -->
+    <ui-contact-call></ui-contact-call>
+</div>
